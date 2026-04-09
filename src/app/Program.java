@@ -15,7 +15,6 @@ public class Program {
         Scanner sc = new Scanner(System.in);
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
-        // ZONA DE RISCO
         try {
             System.out.print("Room number: ");
             int number = sc.nextInt();
@@ -37,7 +36,6 @@ public class Program {
             reservation.updateDates(checkIn, checkOut);
             System.out.println("Reservation: " + reservation);
         }
-        // AS AMBULÂNCIAS
         catch (ParseException e) {
             System.out.println("Invalid date format");
         }
